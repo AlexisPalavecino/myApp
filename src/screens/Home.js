@@ -6,7 +6,7 @@ import Categories from '../components/Categories'
 const Home = () => {
   return (
     <>
-    <Header title={'Alexis'}/>
+    <Header title={'Home'}/>
     <Categories/>
     </>
   )
