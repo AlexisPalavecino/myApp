@@ -1,6 +1,8 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Text, View, FileList } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import allProducts from '../../data/products'
+import { Header, SearchInput} from '../../components'
+import styles from './Products.style'
 
 
 const Products = ({category}) => {
@@ -27,12 +29,24 @@ const Products = ({category}) => {
     }, [category, keyword])
     
   return (
-    <View>
-      <Text>Products</Text>
+    <View style={styles.container}>
+      <Header title={category}/>
+      <SearchInput onSearch={setKeyword}/>
+      <View>
+       <FileList 
+       data={arrProducts}
+       renderItem={({item})=>(
+        <View> 
+            <Text>{item.title}</Text>
+        </View>
+
+       )}
+       keyExtractor={item=> item.id}/> 
     </View>
+    </View>
+   
   )
 }
 
 export default Products
 
-const styles = StyleSheet.create({})
