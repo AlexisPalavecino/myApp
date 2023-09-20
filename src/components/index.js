@@ -1,5 +1,5 @@
 import Card from "./Card/Card";
 import Header from "./Header/Header";
-import SearchImput from './SearchInput/SearchInput'
+import SearchInput from './SearchInput/SearchInput';
 
-export {Card, Header, SearchImput}
+export {Card, Header, SearchInput}

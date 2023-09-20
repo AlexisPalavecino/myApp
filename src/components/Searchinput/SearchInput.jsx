@@ -15,7 +15,7 @@ const clearInput = () =>{
 }
   return (
     <View style={styles.container}>
-      <TextInput style={styles.input} value={value} onChange={{setValue}} placeholder='Search product' />
+      <TextInput style={styles.input} value={value} onChangeText={setValue} placeholder='Search product' />
     <Pressable onPress={search}>
         <AntDesing name='search1' size={25} color={'black'}/>
     </Pressable>

@@ -1,4 +1,4 @@
-import { Text, View, FileList } from 'react-native'
+import { Text, View, FileList, FlatList } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import allProducts from '../../data/products'
 import { Header, SearchInput} from '../../components'
@@ -33,7 +33,7 @@ const Products = ({category}) => {
       <Header title={category}/>
       <SearchInput onSearch={setKeyword}/>
       <View>
-       <FileList 
+       <FlatList 
        data={arrProducts}
        renderItem={({item})=>(
         <View> 
