@@ -10,6 +10,7 @@ export default styles = StyleSheet.create({
         alignItems:'center',
     },
     text:{
-        fontSize:30,
+        fontSize:40,
+        fontFamily:'Mooli',
     }
 })

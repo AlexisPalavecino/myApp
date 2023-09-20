@@ -21,5 +21,6 @@ const styles = StyleSheet.create({
         flex:1,
         width:'100%',
     }
+ 
 
 })

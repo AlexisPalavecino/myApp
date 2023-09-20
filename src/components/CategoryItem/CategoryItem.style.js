@@ -1,4 +1,5 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from "react-native"
+
 
 export default styles = StyleSheet.create({
     Cardcontainer:{
@@ -10,8 +11,7 @@ export default styles = StyleSheet.create({
 
     },
     text:{
-        fontSize:15,
+        fontSize:20,
         fontFamily:'Mooli',
     }
 })
-

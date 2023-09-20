@@ -5,14 +5,20 @@ import { CategoryItem } from './components'
 import { Header } from '../../components'
 import styles from './Home.style'
 
-const Home = () => {
+const Home = ({setCategorySelected}) => {
   return (
   
     <View style={styles.container}>
     <Header title={'Home'}/>
-      <FlatList data={categories}
+      <FlatList 
+      data={categories}
       keyExtractor={category => category}
-      renderItem={({item})=> <CategoryItem category={item}/>}
+      renderItem={({item})=>(
+       <CategoryItem 
+          category={item} 
+          setCategorySelected={setCategorySelected}
+        />
+        )}
       />
     </View>
     
