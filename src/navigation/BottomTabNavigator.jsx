@@ -1,4 +1,5 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import OrdersNavigator from "./OrdersNavigator";
 import CartNavigator from './CartNavigator'
 import StackNavigator from './StackNavigator'
 import { StyleSheet } from "react-native";
@@ -20,7 +21,12 @@ function BottomTabNavigator(){
             }}/>
             <BottomTab.Screen name='CartNav' component={CartNavigator}  options={{
                 tabBarIcon:({focused}) =>(
-                    <Fontisto name="shopping-basket" size={24} color={focused ? colors.quaternary : '#fff'}/>
+                    <Fontisto name="shopping-basket-add" size={24} color={focused ? colors.quaternary : '#fff'}/>
+                ),
+            }}/>
+            <BottomTab.Screen name='OrdersNav' component={OrdersNavigator}  options={{
+                tabBarIcon:({focused}) =>(
+                    <Fontisto name="nav-icon-a" size={24} color={focused ? colors.quaternary : '#fff'}/>
                 ),
             }}/>
         </BottomTab.Navigator>
