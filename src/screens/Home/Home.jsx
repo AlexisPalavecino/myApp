@@ -12,7 +12,7 @@ import Counter from '../../components/Counter'
 const Home = ({ navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
-    <Counter/>
+    
     <StatusBar animated={true} barStyle={'dark-content'} />
     <Header title={'Categories'}/>
     <View style={styles.listContainer}>

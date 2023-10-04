@@ -2,6 +2,7 @@ import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native'
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { increment, decrement, incrementByAmount } from '../features/counter/CounterSlice'
+import { colors } from "../../src/constants/colors"
 
 const Counter = () => {
   const [inputToAdd, setInputToAdd] = useState(0)
@@ -14,7 +15,7 @@ const Counter = () => {
         <Pressable style={styles.counterButtons} onPress={() => dispatch(decrement())}>
           <Text style={styles.signs}>-</Text>
         </Pressable>
-        <Text style={styles.signs}>{counter}</Text>
+        <Text style={styles.signs2}>{counter}</Text>
         <Pressable style={styles.counterButtons} onPress={() => dispatch(increment())}>
           <Text style={styles.signs}>+</Text>
         </Pressable>
@@ -28,7 +29,7 @@ const Counter = () => {
           onChangeText={value => setInputToAdd(Number(value))}
         />
         <Pressable onPress={() => dispatch(incrementByAmount(inputToAdd))}>
-          <Text>add</Text>
+          <Text style={styles.signs}>ADD</Text>
         </Pressable>
       </View>
     </View>
@@ -39,31 +40,41 @@ export default Counter
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'red',
+    backgroundColor: colors.primary,
   },
   counterContainer: {
     flexDirection: 'row',
-    backgroundColor: 'green',
+    backgroundColor: '#ffffff',
     justifyContent: 'space-between',
     height: 50,
+    
   },
   counterButtons: {
-    backgroundColor: 'blue',
-    width: '33%',
+    backgroundColor: colors.secundary,
+    textDecorationStyle:'solid',
+    width: '20%',
     justifyContent: 'center',
     alignItems: 'center',
   },
   signs: {
+    fontSize: 30,
+    color:'white',
+  },
+  signs2: {
     fontSize: 35,
+    color:'black',
   },
   input: {
     backgroundColor: 'white',
     width: '80%',
     height: 30,
+    padding: 5,
+    margin:10,
+    
   },
   inputContaienr: {
     flexDirection: 'row',
-    marginVertical: 10,
-    padding: 10,
+    marginVertical: 5,
+    padding: 5,
   },
 })

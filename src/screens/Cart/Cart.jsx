@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './Cart.styles'
 import cart from '../../data/cart'
 import CartItem from './components/Cartitem'
+import Counter from '../../components/Counter'
 
 const Cart = () => {
 const renderItem =() =>   <CartItem />
@@ -26,6 +27,7 @@ const renderItem =() =>   <CartItem />
           </View>
         </Pressable>
       </View>
+      <Counter />
     </View>
   )
 }
