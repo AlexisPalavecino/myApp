@@ -1,1 +1,1 @@
-export const baseURL ='https://myapp-4af7b-default-rtdb.firebaseio.com/'
+export const baseUrl ='https://myapp-4af7b-default-rtdb.firebaseio.com/'
