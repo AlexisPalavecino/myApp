@@ -1,12 +1,14 @@
 import { FlatList, Pressable, Text, View } from 'react-native'
 import React from 'react'
 import styles from './Cart.styles'
-import cart from '../../data/cart'
 import CartItem from './components/Cartitem'
-import Counter from '../../components/Counter'
+import { useSelector } from 'react-redux'
 
 const Cart = () => {
-const renderItem =() =>   <CartItem />
+  const cart = useSelector( state=> state.cart.items)
+  const total = useSelector( state => state.cart.total)
+
+  const renderItem =({item}) =>   <CartItem item={item}/>
 
 
   return (
@@ -23,11 +25,11 @@ const renderItem =() =>   <CartItem />
               Confirm
           </Text>
           <View>
-            <Text>{'Total $100'}</Text>
+            <Text>{`Total $${total}`}</Text>
           </View>
         </Pressable>
       </View>
-      <Counter />
+      
     </View>
   )
 }

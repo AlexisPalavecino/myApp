@@ -1,9 +1,18 @@
-import { Text, View, Image } from 'react-native'
+import { Text, View, Image, Pressable } from 'react-native'
 import React from 'react'
 import { Header } from '../../components'
 import styles from './Details.style'
+import { useDispatch } from 'react-redux'
+import { addItem } from '../../features/cart/cartSlice'
 
 const Details = ({route}) => {
+  const dispatch = useDispatch()
+
+  const handleAddToCart = () => {
+    dispatch(addItem({...product, quantity: 1}))
+  }
+
+
   const {product} = route.params
   return (
     <View style={styles.container}>
@@ -14,6 +23,9 @@ const Details = ({route}) => {
       <Text style={styles.title}>{product.title}</Text>
       <Text>{product.description}</Text>
       <Text style={styles.price}>{`$ ${product.price}`}</Text> 
+      <Pressable onPress={handleAddToCart}>
+        <Text>Add to cart</Text>
+      </Pressable>
     </View>
   )
 }

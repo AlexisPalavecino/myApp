@@ -1,10 +1,9 @@
-import { FlatList, View } from 'react-native'
+import { FlatList, View, SafeAreaView } from 'react-native'
 import React from 'react'
 
 import { CategoryItem } from './components'
 import { Header } from '../../components'
 import styles from './Home.style'
-import { SafeAreaView } from 'react-native-safe-area-context'
 import { StatusBar } from 'expo-status-bar'
 import Counter from '../../components/Counter'
 import { useGetCategoriesQuery } from '../../services/shopApi'
@@ -24,9 +23,9 @@ const Home = ({ navigation}) => {
         keyExtractor={category => category.title}
         renderItem={({item})=>(
         <CategoryItem 
-            category={item}
+            category={item.title}
             navigation={navigation} 
-            // setCategorySelected={setCategorySelected}
+            
           />
           )}
       />)}

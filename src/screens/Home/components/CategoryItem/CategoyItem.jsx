@@ -1,6 +1,5 @@
 import { Pressable, Text, View} from 'react-native'
 import React from 'react'
-import {Card} from '../../../../components'
 import styles from './CategoryItem.style'
 import { useDispatch } from 'react-redux'
 import { setCategorySelected } from '../../../../features/shop/shopSlice'
