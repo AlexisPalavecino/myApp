@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import styles from './Signup.styles'
 import { useDispatch } from 'react-redux'
 import { useSignUpMutation } from '../../services/authApi'
+import { setUser } from '../../features/auth/authSlice'
 
 const Signup = ({ navigation }) => {
   const [email, setEmail] = useState('')
@@ -20,6 +21,9 @@ const Signup = ({ navigation }) => {
       password,
     })
     console.log (result)
+    if(result.isSuccess){
+      dispatch(setUser(result))
+    }
       // .unwrap()
       // .then(result => {
       //   console.log(result)

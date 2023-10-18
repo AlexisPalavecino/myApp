@@ -23,4 +23,3 @@ setupListeners(store.dispatch)
 
 export default store
 
-//counter: counterSlice,
