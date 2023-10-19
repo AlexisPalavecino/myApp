@@ -6,5 +6,6 @@ import Cartitem from "./Cart/components/Cartitem";
 import Orders from "./Orders/Orders";
 import Login from "./Login/Login"
 import Signup from "./Signup/Signup"
+import Profile from './Profile/Profile'
 
-export {Home, Products, Details, Cart, Cartitem, Orders, Login, Signup}
+export {Home, Products, Details, Cart, Cartitem, Orders, Login, Signup, Profile}

@@ -5,6 +5,7 @@ import StackNavigator from './StackNavigator'
 import { StyleSheet } from "react-native";
 import { colors } from "../constants/colors";
 import Fontisto from'@expo/vector-icons/Fontisto'
+import ProfileNavigator from "./ProfileNavigator";
 
 const BottomTab =createBottomTabNavigator()
 
@@ -27,6 +28,11 @@ function BottomTabNavigator(){
             <BottomTab.Screen name='OrdersNav' component={OrdersNavigator}  options={{
                 tabBarIcon:({focused}) =>(
                     <Fontisto name="nav-icon-a" size={24} color={focused ? colors.quaternary : '#fff'}/>
+                ),
+            }}/>
+            <BottomTab.Screen name='ProfileNav' component={ProfileNavigator}  options={{
+                tabBarIcon:({focused}) =>(
+                    <Fontisto name="person" size={24} color={focused ? colors.quaternary : '#fff'}/>
                 ),
             }}/>
         </BottomTab.Navigator>
