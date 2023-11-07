@@ -17,6 +17,10 @@ export default styles = StyleSheet.create({
         flexWrap:'wrap',
         alignItems:'center',
         justifyContent:'space-between'
-    }
+    },
+    image: {
+        width: 50,
+        height: 50,
+      },
 
 })

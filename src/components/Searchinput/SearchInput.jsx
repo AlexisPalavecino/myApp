@@ -6,9 +6,9 @@ import styles from './SearchInput.style'
 const SearchInput = ({onSearch}) => {
 const [value, setValue] = useState('')
 
-const search = () => {
+const search = (() => {
     onSearch(value)
-    }
+    }, [value])
 const clearInput = () =>{
     setValue('')
     onSearch('')

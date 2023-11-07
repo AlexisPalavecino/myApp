@@ -15,13 +15,30 @@ export default styles = StyleSheet.create({
     width:'90%'
   },
   title: {
-    fontSize: 20,
+    fontSize: 25,
     marginVertical:15,
     fontFamily:'Mooli'
   },
+  titleFav: {
+    fontSize: 15,
+    marginVertical:10,
+    fontFamily:'Mooli'
+  },
   price: {
-    fontSize: 25,
+    fontSize: 20,
     fontWeight: 'bold',
     marginVertical: 15,
   },
+  btnFav:{
+    backgroundColor: colors.quaternary,
+        marginVertical: 10,
+        height: 50,
+        borderRadius: 20,
+        alignItems:'center',
+        justifyContent: 'center',
+        width: '50%',
+       
+
+  }
+
 })

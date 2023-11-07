@@ -53,7 +53,7 @@ const Products = ({navigation}) => {
                     }}
                   />
                   <Text style={styles.title}>{item.title}</Text>
-                  <Text style={styles.price}>{`$${item.price.toFixed(2)}`}</Text>
+                  {/* <Text style={styles.price}>{`$${item.price.toFixed(2)}`}</Text> */}
                 </TouchableOpacity>
               )}
               keyExtractor={item => item.id}

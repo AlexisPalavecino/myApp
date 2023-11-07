@@ -7,7 +7,7 @@ const Cartitem = ({item}) => {
   return (
     <View style={styles.container}>
         <View>
-            <Image style={styles.Image}
+            <Image style={styles.image}
             source={{uri: item.images[0]}}>
         
             </Image>

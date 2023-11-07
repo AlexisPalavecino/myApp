@@ -22,9 +22,9 @@ const Details = ({route}) => {
       source={{uri: product.images[0]}} />
       <Text style={styles.title}>{product.title}</Text>
       <Text>{product.description}</Text>
-      <Text style={styles.price}>{`$ ${product.price}`}</Text> 
-      <Pressable onPress={handleAddToCart}>
-        <Text>Add to cart</Text>
+      <Text style={styles.price}>Rent: {`$ ${product.price}`}</Text> 
+      <Pressable style={styles.btnFav} onPress={handleAddToCart}>
+        <Text style={styles.titleFav}>Add to Favorites</Text>
       </Pressable>
     </View>
   )

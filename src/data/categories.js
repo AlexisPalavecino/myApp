@@ -1,62 +1,92 @@
- export default [
-  { title: 'smartphones' },
+ export default 
+ [
+  { title: 'Action' },
   {
-    title: 'laptops',
+    title: 'Adventure',
   },
   {
-    title: 'fragrances',
+    title: 'Comedy',
   },
   {
-    title: 'skincare',
+    title: 'Drama',
   },
   {
-    title: 'groceries',
+    title: 'Horror',
   },
   {
-    title: 'home-decoration',
+    title: 'Romance',
   },
   {
-    title: 'furniture',
+    title: 'Science-Fiction',
   },
   {
-    title: 'tops',
+    title: 'Fantasy',
   },
   {
-    title: 'womens-dresses',
+    title: 'Documentary-film',
   },
-  {
-    title: 'womens-shoes',
-  },
-  {
-    title: 'mens-shirts',
-  },
-  {
-    title: 'mens-shoes',
-  },
-  {
-    title: 'mens-watches',
-  },
-  {
-    title: 'womens-watches',
-  },
-  {
-    title: 'womens-bags',
-  },
-  {
-    title: 'womens-jewellery',
-  },
-  {
-    title: 'sunglasses',
-  },
-  {
-    title: 'automotive',
-  },
-  {
-    title: 'motorcycle',
-  },
-  {
-    title: 'lighting',
-  }]
+]
+ 
+ 
+// //  [
+// //   { title: 'smartphones' },
+// //   {
+// //     title: 'laptops',
+// //   },
+// //   {
+// //     title: 'fragrances',
+// //   },
+// //   {
+// //     title: 'skincare',
+// //   },
+// //   {
+// //     title: 'groceries',
+// //   },
+// //   {
+// //     title: 'home-decoration',
+// //   },
+// //   {
+// //     title: 'furniture',
+// //   },
+// //   {
+// //     title: 'tops',
+// //   },
+// //   {
+// //     title: 'womens-dresses',
+// //   },
+// //   {
+// //     title: 'womens-shoes',
+// //   },
+// //   {
+// //     title: 'mens-shirts',
+// //   },
+// //   {
+// //     title: 'mens-shoes',
+// //   },
+// //   {
+// //     title: 'mens-watches',
+// //   },
+// //   {
+// //     title: 'womens-watches',
+// //   },
+// //   {
+// //     title: 'womens-bags',
+// //   },
+// //   {
+// //     title: 'womens-jewellery',
+// //   },
+// //   {
+// //     title: 'sunglasses',
+// //   },
+// //   {
+// //     title: 'automotive',
+// //   },
+// //   {
+// //     title: 'motorcycle',
+// //   },
+// //   {
+// //     title: 'lighting',
+// //   }]
 //    'smartphones',
 //    'laptops' ,
 //     'fragrances',

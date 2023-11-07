@@ -22,12 +22,7 @@ function BottomTabNavigator(){
             }}/>
             <BottomTab.Screen name='CartNav' component={CartNavigator}  options={{
                 tabBarIcon:({focused}) =>(
-                    <Fontisto name="shopping-basket-add" size={24} color={focused ? colors.quaternary : '#fff'}/>
-                ),
-            }}/>
-            <BottomTab.Screen name='OrdersNav' component={OrdersNavigator}  options={{
-                tabBarIcon:({focused}) =>(
-                    <Fontisto name="nav-icon-a" size={24} color={focused ? colors.quaternary : '#fff'}/>
+                    <Fontisto name="heart" size={24} color={focused ? colors.quaternary : '#fff'}/>
                 ),
             }}/>
             <BottomTab.Screen name='ProfileNav' component={ProfileNavigator}  options={{
@@ -35,6 +30,8 @@ function BottomTabNavigator(){
                     <Fontisto name="person" size={24} color={focused ? colors.quaternary : '#fff'}/>
                 ),
             }}/>
+           
+         
         </BottomTab.Navigator>
     )
 }
@@ -58,3 +55,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
       },
 })
+
+// <BottomTab.Screen name='OrdersNav' component={OrdersNavigator}  options={{
+//                 tabBarIcon:({focused}) =>(
+//                     <Fontisto name="nav-icon-a" size={24} color={focused ? colors.quaternary : '#fff'}/>
+//                 ),
+//             }}/>
+ 
