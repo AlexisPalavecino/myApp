@@ -7,6 +7,7 @@ export const shopApi = createApi({
     endpoints: builder => ({
         getCategories: builder.query({
           query: () => 'categories.json',
+          
         }),
         getProducts: builder.query({
           query: () => 'products.json',
@@ -36,7 +37,7 @@ export const shopApi = createApi({
         }), 
     }),    
 })
-
+//console.log({getCaterories})
 
 export const {
     useGetCategoriesQuery,

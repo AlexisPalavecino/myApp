@@ -3,8 +3,8 @@ import categories from "../../data/categories";
 import products from "../../data/products";
 
 const initialState = {
-    categories: categories,
-    products: products,
+    categories: [],
+    products: [],
     productsFilteredByCategory: [],
     categorySelected: null,
     productsIdSelected:null,
@@ -29,4 +29,5 @@ export const shopSlice = createSlice ({
 })
 
 export const {setCategorySelected, setproductsIdSelected} =shopSlice.actions
+
 export default shopSlice.reducer

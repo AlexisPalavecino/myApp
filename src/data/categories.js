@@ -1,4 +1,4 @@
-export default [
+ export default [
   { title: 'smartphones' },
   {
     title: 'laptops',
@@ -79,7 +79,7 @@ export default [
   
 //      'automotive',
 //    'motorcycle',
-// 'lighting',
+// 'lighting',]
   
 
 

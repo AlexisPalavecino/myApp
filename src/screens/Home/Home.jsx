@@ -1,22 +1,23 @@
-import { FlatList, View, SafeAreaView } from 'react-native'
+import { FlatList, View, SafeAreaView} from 'react-native'
 import React from 'react'
 
 import { CategoryItem } from './components'
 import { Header } from '../../components'
 import styles from './Home.style'
 import { StatusBar } from 'expo-status-bar'
-import Counter from '../../components/Counter'
 import { useGetCategoriesQuery } from '../../services/shopApi'
 
 
 const Home = ({ navigation}) => {
   const {data, isLoading} = useGetCategoriesQuery()
+  console.log({data})
   return (
     <SafeAreaView style={styles.container}>
     
     <StatusBar animated={true} barStyle={'dark-content'} />
     <Header title={'Categories'}/>
     <View style={styles.listContainer}>
+      
       {!isLoading && (
         <FlatList 
         data={data}
