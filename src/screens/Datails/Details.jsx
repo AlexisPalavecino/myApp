@@ -1,4 +1,4 @@
-import { Text, View, Image, Pressable } from 'react-native'
+import { Text, View, Image, Pressable, TextInput } from 'react-native'
 import React from 'react'
 import { Header } from '../../components'
 import styles from './Details.style'
@@ -22,7 +22,13 @@ const Details = ({route}) => {
       source={{uri: product.images[0]}} />
       <Text style={styles.title}>{product.title}</Text>
       <Text>{product.description}</Text>
-      <Text style={styles.price}>Rent: {`$ ${product.price}`}</Text> 
+      <TextInput
+          style={styles.inputComents}
+          
+        />
+      <Pressable style={styles.btnFav}>
+          <Text style={styles.titleFav}>Submit</Text>
+        </Pressable>
       <Pressable style={styles.btnFav} onPress={handleAddToCart}>
         <Text style={styles.titleFav}>Add to Favorites</Text>
       </Pressable>
@@ -32,3 +38,5 @@ const Details = ({route}) => {
 
 export default Details
 
+
+  {/* <Text style={styles.price}>Rent: {`$ ${product.price}`}</Text>  */}

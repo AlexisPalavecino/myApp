@@ -30,15 +30,24 @@ export default styles = StyleSheet.create({
     marginVertical: 15,
   },
   btnFav:{
-    backgroundColor: colors.quaternary,
+    backgroundColor: colors.secundary,
         marginVertical: 10,
         height: 50,
         borderRadius: 20,
         alignItems:'center',
         justifyContent: 'center',
         width: '50%',
-       
+        flex: 1,
+          
+  },
+  inputComents:{
+    backgroundColor: colors.quaternary,
+    borderRadius: 20,
+    height: 110,
+    width: '100%',
 
   }
+
+
 
 })
